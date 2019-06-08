@@ -1,8 +1,5 @@
 package com.cloud.commons.dto;
 
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
-
 import java.util.Objects;
 
 /**
@@ -11,13 +8,10 @@ import java.util.Objects;
  * @exception:
  * @description:
  **/
-@JacksonXmlRootElement(localName = "student")
 public class Student {
 
-    @JacksonXmlProperty(localName = "name")
     private String name;
 
-    @JacksonXmlProperty(localName = "score")
     private int score;
 
     public Student() {

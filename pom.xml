@@ -23,11 +23,6 @@
             <artifactId>spring-context</artifactId>
             <version>${spring-context}</version>
         </dependency>
-        <!-- 消息转换器dataformat依赖 -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
