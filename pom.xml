@@ -14,7 +14,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>z_cloud_commons</name>
-    <description>project for Spring Boot</description>
+    <description>project for Spring Cloud</description>
 
     <dependencies>
         <!--spring-->
