@@ -6,7 +6,7 @@ public class ECooperateMer implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-        private String cooperateMerSeq;
+    private String cooperateMerSeq;
 
     private String agentMerSeq;
 
