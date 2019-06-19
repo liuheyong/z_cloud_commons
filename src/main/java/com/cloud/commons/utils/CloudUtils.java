@@ -11,10 +11,10 @@ import java.util.Map;
 /**
  * @author: LiuHeYong
  * @create: 2019-05-22
- * @description: BootUtils
+ * @description: CloudUtils
  **/
 @Component
-public class BootUtils {
+public class CloudUtils {
 
     /**
      * 锁对象
