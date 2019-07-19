@@ -1,7 +1,5 @@
 package com.cloud.commons.dto;
 
-import java.util.Objects;
-
 /**
  * @author: LiuHeYong
  * @create: 2019-04-19
@@ -38,7 +36,7 @@ public class Student {
         this.name = name;
     }
 
-    @Override
+   /* @Override
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
@@ -58,5 +56,5 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(name, score);
-    }
+    }*/
 }
