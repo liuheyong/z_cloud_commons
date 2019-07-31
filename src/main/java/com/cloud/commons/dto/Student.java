@@ -1,12 +1,16 @@
 package com.cloud.commons.dto;
 
+import java.io.Serializable;
+
 /**
  * @author: LiuHeYong
  * @create: 2019-04-19
  * @exception:
  * @description:
  **/
-public class Student {
+public class Student implements Serializable {
+
+    private static final long serialVersionUID = -46851638838601600L;
 
     private String name;
 
