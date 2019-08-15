@@ -12,6 +12,10 @@ public class Student implements Serializable {
 
     private static final long serialVersionUID = -46851638838601600L;
 
+    private Integer id;
+
+    private int age;
+
     private String name;
 
     private int score;
@@ -19,7 +23,36 @@ public class Student implements Serializable {
     public Student() {
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public Student(String name, int score) {
+        this.name = name;
+        this.score = score;
+    }
+
+    public Student(Integer id, int age, String name) {
+        this.id = id;
+        this.age = age;
+        this.name = name;
+    }
+
+    public Student(Integer id, int age, String name, int score) {
+        this.id = id;
+        this.age = age;
         this.name = name;
         this.score = score;
     }
@@ -61,4 +94,5 @@ public class Student implements Serializable {
     public int hashCode() {
         return Objects.hash(name, score);
     }*/
+
 }
