@@ -13,7 +13,7 @@ public interface ECooperateMerService {
     /**
      * @date: 2019/5/24
      * @param: [eCooperateMer]
-     * @return: com.boot.com.alibabacloud.commons.dto.ECooperateMer
+     * @return: com.boot.com.alibabacloud.commons.serviceSub.ECooperateMer
      * @exception:
      * @description: 详情
      */
@@ -22,7 +22,7 @@ public interface ECooperateMerService {
     /**
      * @date: 2019/5/24
      * @param: [eCooperateMer]
-     * @return: com.boot.com.alibabacloud.commons.dto.ECooperateMer
+     * @return: com.boot.com.alibabacloud.commons.serviceSub.ECooperateMer
      * @exception:
      * @description: 列表
      */
