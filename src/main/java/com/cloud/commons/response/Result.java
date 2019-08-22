@@ -1,12 +1,14 @@
 package com.cloud.commons.response;
 
+import java.io.Serializable;
+
 /**
  * @author: LiuHeYong
  * @create: 2019-05-22
  * @exception:
  * @description:
  **/
-public class Result {
+public class Result implements Serializable {
 
     private static final long serialVersionUID = 326257344007822118L;
 
