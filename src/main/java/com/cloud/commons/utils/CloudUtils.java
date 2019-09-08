@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * @author: LiuHeYong
@@ -56,6 +57,16 @@ public class CloudUtils {
 
     public static Date sdfParse(String strDate, String pattern) throws ParseException {
         return getSdf(pattern).parse(strDate);
+    }
+
+    /**
+    * @Date: 2019-09-04
+    * @Param:
+    * @return:
+    * @Description: 获取UUID
+    */
+    public static String getUUID() throws ParseException {
+        return UUID.randomUUID().toString().replace("-","");
     }
 
     /**
