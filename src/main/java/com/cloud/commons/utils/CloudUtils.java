@@ -1,5 +1,10 @@
 package com.cloud.commons.utils;
 
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFFont;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
 import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
@@ -22,7 +27,8 @@ public class CloudUtils {
      */
     private static final Object lockObj = new Object();
 
-    private static Map<String, ThreadLocal<SimpleDateFormat>> sdfMap = new HashMap<String, ThreadLocal<SimpleDateFormat>>(4);
+    private static Map<String, ThreadLocal<SimpleDateFormat>> sdfMap = new HashMap<String,
+            ThreadLocal<SimpleDateFormat>>(4);
 
     private static final String YYYYMMDDHHMMSS = "yyyy-MM-dd HH:mm:ss";
 
@@ -60,13 +66,13 @@ public class CloudUtils {
     }
 
     /**
-    * @Date: 2019-09-04
-    * @Param:
-    * @return:
-    * @Description: 获取UUID
-    */
+     * @Date: 2019-09-04
+     * @Param:
+     * @return:
+     * @Description: 获取UUID
+     */
     public static String getUUID() throws ParseException {
-        return UUID.randomUUID().toString().replace("-","");
+        return UUID.randomUUID().toString().replace("-", "");
     }
 
     /**
@@ -119,6 +125,30 @@ public class CloudUtils {
      */
     public static int getSixNum() {
         return (int) ((Math.random() * 9.0D + 1.0D) * 100000.0D);
+    }
+
+    /**
+     * @param workbook
+     * @param fontsize
+     * @return 单元格样式
+     */
+    public static HSSFCellStyle createCellStyle(HSSFWorkbook workbook, short fontsize, boolean flagBold, boolean flagCenter) {
+        HSSFCellStyle style = workbook.createCellStyle();
+        //是否水平居中
+        if (flagCenter) {
+            style.setAlignment(HorizontalAlignment.CENTER);//水平居中
+        }
+        style.setVerticalAlignment(VerticalAlignment.CENTER);//垂直居中
+        //创建字体
+        HSSFFont font = workbook.createFont();
+        //是否加粗字体
+        if (flagBold) {
+            font.setBold(true);
+        }
+        font.setFontHeightInPoints(fontsize);
+        //加载字体
+        style.setFont(font);
+        return style;
     }
 
 }
