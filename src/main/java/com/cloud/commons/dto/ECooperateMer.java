@@ -84,4 +84,14 @@ public class ECooperateMer implements Serializable {
         this.agentMerSeq = agentMerSeq;
         this.merName = merName;
     }
+
+    public ECooperateMer(String cooperateMerSeq, String agentMerSeq, String merName, String imageLink, String merLink, String isShow, Integer eOrder) {
+        this.cooperateMerSeq = cooperateMerSeq;
+        this.agentMerSeq = agentMerSeq;
+        this.merName = merName;
+        this.imageLink = imageLink;
+        this.merLink = merLink;
+        this.isShow = isShow;
+        this.eOrder = eOrder;
+    }
 }
