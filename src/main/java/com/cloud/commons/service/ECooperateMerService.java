@@ -17,7 +17,17 @@ public interface ECooperateMerService {
      * @exception:
      * @description: 插入详情
      */
+
     void addECooperateMerInfo(ECooperateMer eCooperateMer) throws Exception;
+
+    /**
+     * @date: 2019/5/24
+     * @param: [eCooperateMer]
+     * @return: com.boot.com.alibabacloud.commons.serviceSub.ECooperateMer
+     * @exception:
+     * @description: 修改详情
+     */
+    void updateECooperateMerInfo(ECooperateMer eCooperateMer) throws Exception;
 
     /**
      * @date: 2019/5/24
