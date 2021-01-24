@@ -2,12 +2,13 @@ package com.cloud.commons.service;
 
 import com.cloud.commons.dto.ECooperateMer;
 import com.cloud.commons.response.QueryECooperateMerResponse;
-
+import org.springframework.stereotype.Component;
 /**
  * @author: LiuHeYong
  * @create: 2019-05-22
  * @description: ECooperateMerService
  **/
+@Component(value = "eCooperateMerService")
 public interface ECooperateMerService {
 
     /**
